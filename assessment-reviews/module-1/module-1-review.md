@@ -129,16 +129,15 @@ a:link {
 
   ```html
   <header class="jumbotron">
-    <style>
-      p {
-        font-size: 20px;
-      } 
-    </style>
     <p>Hello, World!</p>
   </header>
 
   <p>Welcome to this awesome website!</p>
   ```
+  
+  .jumbotron p {
+  font-size: 20px;
+   } 
 
 ## JavaScript
 
@@ -208,7 +207,7 @@ sayHello(Steve);
   console.log(currentSong);
   ```
   
-"Call Me Maybe"
+"Friday, Friday"
 
 
 6. What would the following script log to the console?
@@ -270,11 +269,21 @@ var sum = function(array) {
 
 10. Write a function that takes a character (i.e. a string of length 1) and returns true if it is a vowel, false otherwise.
 
-function vowelFinder(x){
-    var vowels = ['a', 'e', 'i', 'o', 'u'];
+function vowelFinder(letter){
+  var vowels = ['a', 'e', 'i', 'o', 'u'];
+
+  for (x=0; x < vowels.length; x++) {
     
-    if(vowels()return false;
-    return true;
+     if (letter === vowels[x]) {
+       return true;
+     }
+      
+  }
+    
+  return false;
+}
+       
+console.log(vowelFinder('o'));
 
 }
 
