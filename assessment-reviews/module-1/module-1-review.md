@@ -171,7 +171,7 @@ An array is a tool in Javascript that can contain multiple values within one var
 var myName = "Steve";
 
 2. Write a loop that logs the numbers 1 through 10 to the console.
-
+ 
 var x;
 
 for (var x = 1; x <= 10; x++) {
