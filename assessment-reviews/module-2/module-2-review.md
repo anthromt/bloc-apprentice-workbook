@@ -99,7 +99,33 @@ A callback is a function that is passed into another function as variable
 ### Exercises
 
 1. Write a function `filterLongWords()` that takes an array of words and an integer `num` and returns the array of words that are longer than `num`.
+
+
+var filterLongWords = function(array, num){
+  var length = array.length;
+  var longestWords = [];
+  for (i = 0; i < length; i++) {
+    if (array[i].length > num) {
+      longestWords[longestWords.length] = array[i];
+    }
+  }
+  return longestWords;
+}
+
+
 2. Write a function `charFreq()` that takes a string and builds a frequency listing of the characters contained in it. Represent the frequency listing as a Javascript object. Try it with something like `charFreq("abbabcbdbabdbdbabababcbcbab")`.
+
+
+var charFreq = function(string){
+  var list = {};
+  var length = string.length;
+  for (var i = 0; i < length; i++) {  
+  if 
+  else 
+    list;
+  }
+  return list;
+}
 
 ## DOM Scripting
 
@@ -116,12 +142,6 @@ The DOM stands for Document Object Model, and using JavaScript it can change all
   ```html
   <a href="#" id="next" class="btn">Next</a>
 ```
-<script>
-var nextButton = "next";
-</script>
-
-2. Write another line that updates the text of `nextButton` to `"Next image"`.
-
 <script>
 var nextButton = "next";
 </script>
